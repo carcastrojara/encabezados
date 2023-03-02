@@ -9,7 +9,7 @@ app.get('/', (req, res) => {
 });
 app.get('/chrome', (req, res) => {
 //res.send(`<h1>El browser es: ${req.headers['user-agent']}<h1/>`);
-res.send(`<h1>El browser es: ${req.headers['user-agent']}<h1/>`);
+res.send(`<h1>${req.headers['user-agent']}<h1/>`);
 });
 
 app.listen(3000, () => console.log('Listening on port 3000!'));
